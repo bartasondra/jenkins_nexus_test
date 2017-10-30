@@ -70,7 +70,7 @@
    		<snapshotRepository>
       			<id>snapshots</id>
 			<name>Snapshots</name>
-      			<url>http://172.18.6.158:8081/repository/comar-snapshots</url>
+      			<url>http://172.18.6.158:8081/repository/comar-snapshots/</url>
    		</snapshotRepository>
 		
 	</distributionManagement>
