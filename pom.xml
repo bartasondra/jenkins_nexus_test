@@ -59,16 +59,24 @@
 		</plugins>
 	</build>
 	
+	<repositories>
+	    <repository>
+      		<id>comar-group</id>
+      		<url>http://172.18.6.158:8081/repository/maven-group/</url>
+    	    </repository>
+  	</repositories>
+	
+	
 	<distributionManagement>
 		
 		<repository>
-      			<id>releases</id>
+      			<id>nexus-releases</id>
 			<name>Releases</name>
       			<url>http://172.18.6.158:8081/repository/comar-releases/</url>
    		</repository>
 		
    		<snapshotRepository>
-      			<id>snapshots</id>
+      			<id>nexus-snapshots</id>
 			<name>Snapshots</name>
       			<url>http://172.18.6.158:8081/repository/comar-snapshots/</url>
    		</snapshotRepository>
