@@ -11,6 +11,7 @@ public class JenkinsNexusTestApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		//
 	}
 
 }
