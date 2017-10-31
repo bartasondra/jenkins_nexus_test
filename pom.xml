@@ -56,16 +56,39 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+			    <groupId>org.codehaus.cargo</groupId>
+			    <artifactId>cargo-maven2-plugin</artifactId>
+			    <version>1.5.0</version>
+			    <configuration>
+				    <container>
+					<containerId>tomcat8x</containerId>
+					<type>remote</type>
+				    </container>
+				    <configuration>
+					<type>runtime</type>
+					<properties>
+					    <cargo.remote.username>tomcat</cargo.remote.username>
+					    <cargo.remote.password>tomcat</cargo.remote.password>
+					    <cargo.tomcat.manager.url>http://172.18.6.157:8080/manager/text</cargo.tomcat.manager.url>
+					</properties>
+				    </configuration>
+			    </configuration>
+		        </plugin>
+		
+		
 		</plugins>
+		
+		
 	</build>
-	
+	<!--
 	<repositories>
 	    <repository>
       		<id>comar-group</id>
       		<url>http://172.18.6.158:8081/repository/maven-group/</url>
     	    </repository>
   	</repositories>
-	
+	-->
 	
 	<distributionManagement>
 		
@@ -82,6 +105,8 @@
    		</snapshotRepository>
 		
 	</distributionManagement>
+	
+	
 
 
 </project>
